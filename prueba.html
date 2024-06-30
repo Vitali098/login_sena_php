@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+    <section class="login-section">
+        <form action="index.php" method="post">
+            <div class="login-box">
+                <p>Iniciar Sesión</p>
+                <div class="user-box">
+                    <input required="" name="username" type="text">
+                    <label>Usuario</label>
+                </div>
+                <div class="user-box">
+                    <input required="" name="password" type="password">
+                    <label>Contraseña</label>
+                </div>
+                <label for="tipo-usuario">Seleccione el tipo de usuario:</label>
+                <select name="tipo_usuario" id="tipo-usuario" required>
+                    <option value="">Seleccione...</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="admin">Administrador</option>
+                </select>
+                <button type="submit">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Enviar
+                </button>
+                <p>¿No tienes cuenta? <a href="registro.html" class="a2">Registrate</a></p>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
